@@ -14,7 +14,7 @@ function ExternalLink({
   children: React.ReactNode;
 }) {
   return (
-    <a href={href} className="underline text-black">
+    <a href={href} className='underline text-black'>
       {children}
     </a>
   );
@@ -30,7 +30,7 @@ export default function Create() {
     setValue(event.currentTarget.value);
   };
 
-  const getWebhookURL = () => `https://sentrydiscord.dev/api/webhooks/${key}`;
+  const getWebhookURL = () => `${window.location.origin}/api/webhooks/${key}`;
 
   const onClick = async (event) => {
     event.preventDefault();
@@ -59,143 +59,143 @@ export default function Create() {
   };
 
   return (
-    <div className="bg-white">
+    <div className='bg-white'>
       <Link
-        href="/"
-        className="inline-block mt-5 ml-5 px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white"
+        href='/'
+        className='inline-block mt-5 ml-5 px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white'
       >
         &larr; Home
       </Link>
 
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+      <div className='max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8'>
         <main>
-          <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-            <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <div className='relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl'>
+            <h2 className='text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
               Start by making a Discord Webhook
             </h2>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
+            <p className='mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500'>
               Not sure how? Follow{' '}
-              <ExternalLink href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks">
+              <ExternalLink href='https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks'>
                 this Discord guide
               </ExternalLink>{' '}
               to create one. Next, enter that URL below and we'll give you a
               unique webhook to add to Sentry.
             </p>
 
-            <div className="bg-white py-12 sm:py-16">
-              <div className="relative sm:py-16">
-                <div aria-hidden="true" className="hidden sm:block">
-                  <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-3xl"></div>
+            <div className='bg-white py-12 sm:py-16'>
+              <div className='relative sm:py-16'>
+                <div aria-hidden='true' className='hidden sm:block'>
+                  <div className='absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-3xl'></div>
                   <svg
-                    className="absolute top-8 left-1/2 -ml-3"
-                    width="404"
-                    height="392"
-                    fill="none"
-                    viewBox="0 0 404 392"
+                    className='absolute top-8 left-1/2 -ml-3'
+                    width='404'
+                    height='392'
+                    fill='none'
+                    viewBox='0 0 404 392'
                   >
                     <defs>
                       <pattern
-                        id="8228f071-bcee-4ec8-905a-2a059a2cc4fb"
-                        x="0"
-                        y="0"
-                        width="20"
-                        height="20"
-                        patternUnits="userSpaceOnUse"
+                        id='8228f071-bcee-4ec8-905a-2a059a2cc4fb'
+                        x='0'
+                        y='0'
+                        width='20'
+                        height='20'
+                        patternUnits='userSpaceOnUse'
                       >
                         <rect
-                          x="0"
-                          y="0"
-                          width="4"
-                          height="4"
-                          className="text-gray-200"
-                          fill="currentColor"
+                          x='0'
+                          y='0'
+                          width='4'
+                          height='4'
+                          className='text-gray-200'
+                          fill='currentColor'
                         />
                       </pattern>
                     </defs>
                     <rect
-                      width="404"
-                      height="392"
-                      fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)"
+                      width='404'
+                      height='392'
+                      fill='url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)'
                     />
                   </svg>
                 </div>
-                <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                  <div className="relative rounded-2xl px-6 py-10 bg-indigo-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
+                <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8'>
+                  <div className='relative rounded-2xl px-6 py-10 bg-indigo-600 overflow-hidden shadow-xl sm:px-12 sm:py-20'>
                     <div
-                      aria-hidden="true"
-                      className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
+                      aria-hidden='true'
+                      className='absolute inset-0 -mt-72 sm:-mt-32 md:mt-0'
                     >
                       <svg
-                        className="absolute inset-0 h-full w-full"
-                        preserveAspectRatio="xMidYMid slice"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 1463 360"
+                        className='absolute inset-0 h-full w-full'
+                        preserveAspectRatio='xMidYMid slice'
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 1463 360'
                       >
                         <path
-                          className="text-indigo-500 text-opacity-40"
-                          fill="currentColor"
-                          d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
+                          className='text-indigo-500 text-opacity-40'
+                          fill='currentColor'
+                          d='M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z'
                         />
                         <path
-                          className="text-indigo-700 text-opacity-40"
-                          fill="currentColor"
-                          d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
+                          className='text-indigo-700 text-opacity-40'
+                          fill='currentColor'
+                          d='M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z'
                         />
                       </svg>
                     </div>
-                    <div className="relative">
-                      <div className="sm:text-center">
-                        <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+                    <div className='relative'>
+                      <div className='sm:text-center'>
+                        <h2 className='text-3xl font-extrabold text-white tracking-tight sm:text-4xl'>
                           {key != null
                             ? 'Your Sentry Webhook'
                             : 'Enter your Discord webhook URL'}
                         </h2>
-                        <p className="mt-4 mx-auto max-w-2xl text-lg text-indigo-200">
+                        <p className='mt-4 mx-auto max-w-2xl text-lg text-indigo-200'>
                           The only information we store is the event platform
                           (language) and time.
                         </p>
                       </div>
                       {isLoading ? (
-                        <div className="mt-16 flex justify-center">
+                        <div className='mt-16 flex justify-center'>
                           <Spinner />
                         </div>
                       ) : key == null ? (
                         <Fragment>
-                          <form className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
-                            <div className="min-w-0 flex-1">
-                              <label htmlFor="url" className="sr-only">
+                          <form className='mt-12 sm:mx-auto sm:max-w-lg sm:flex'>
+                            <div className='min-w-0 flex-1'>
+                              <label htmlFor='url' className='sr-only'>
                                 Discord Webhook
                               </label>
                               <input
-                                id="url"
-                                type="text"
+                                id='url'
+                                type='text'
                                 value={value}
                                 onChange={onChange}
-                                className="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                                placeholder="Discord Webhook URL"
+                                className='block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600'
+                                placeholder='Discord Webhook URL'
                               />
                             </div>
-                            <div className="mt-4 sm:mt-0 sm:ml-3">
+                            <div className='mt-4 sm:mt-0 sm:ml-3'>
                               <button
-                                type="submit"
+                                type='submit'
                                 onClick={onClick}
-                                className="block w-full rounded-md border border-transparent px-5 py-3 bg-indigo-500 text-base font-medium text-white shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"
+                                className='block w-full rounded-md border border-transparent px-5 py-3 bg-indigo-500 text-base font-medium text-white shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10'
                               >
                                 Create
                               </button>
                             </div>
                           </form>
                           {error != null ? (
-                            <p className="mt-3 text-center text-sm text-indigo-200">
+                            <p className='mt-3 text-center text-sm text-indigo-200'>
                               {error}
                             </p>
                           ) : null}
                         </Fragment>
                       ) : (
-                        <div className="m-auto sm:max-w-lg">
-                          <div className="mt-8 w-full flex shadow items-center justify-center px-5 py-3 border border-transparent font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50 flex-row">
-                            <p className="w-full font-mono text-lg truncate">
+                        <div className='m-auto sm:max-w-lg'>
+                          <div className='mt-8 w-full flex shadow items-center justify-center px-5 py-3 border border-transparent font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50 flex-row'>
+                            <p className='w-full font-mono text-lg truncate'>
                               {getWebhookURL()}
                             </p>
                             <Copy value={getWebhookURL()} />
@@ -208,28 +208,41 @@ export default function Create() {
               </div>
             </div>
 
-            <div className="mb-12">
-              <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <div className='mb-12'>
+              <h2 className='text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
                 Finally, add the Webhook Integration to Sentry
               </h2>
-              <ul className="mt-4 max-w-3xl mx-auto text-xl text-gray-500 space-y-2">
+              <ul className='mt-4 max-w-3xl mx-auto text-xl text-gray-500 space-y-2'>
                 <li>
-                  Create a new integration by going to <strong>Settings</strong> &rarr; <strong>Custom Integrations</strong> &rarr; <strong>Create New Integration</strong>, and selecting <strong>Internal Integration</strong>.
+                  Create a new integration by going to <strong>Settings</strong>{' '}
+                  &rarr; <strong>Custom Integrations</strong> &rarr;{' '}
+                  <strong>Create New Integration</strong>, and selecting{' '}
+                  <strong>Internal Integration</strong>.
                 </li>
                 <li>
-                  Paste the above link into the <strong>Webhook URL</strong> field and enable <strong>Alert Rule Action</strong>.
+                  Paste the above link into the <strong>Webhook URL</strong>{' '}
+                  field and enable <strong>Alert Rule Action</strong>.
                 </li>
                 <li>
-                  Go to <strong>Alerts</strong> &rarr; <strong>Create Alert</strong> and set up a new rule to <strong>Send a notification via an integration</strong>, and choose the integration you just created.
+                  Go to <strong>Alerts</strong> &rarr;{' '}
+                  <strong>Create Alert</strong> and set up a new rule to{' '}
+                  <strong>Send a notification via an integration</strong>, and
+                  choose the integration you just created.
                 </li>
               </ul>
-              <p className="mt-4 max-w-lg mx-auto text-center text-xl text-gray-500">
+              <p className='mt-4 max-w-lg mx-auto text-center text-xl text-gray-500'>
                 Confused? Check out the demo below for a walkthrough!
               </p>
-              <div className="mt-8 relative h-0 w-full pb-[480px]">
-                <iframe loading="lazy" allowFullScreen={true} allow="fullscreen;" className="absolute w-full h-full top-0 left-0" src="https://demo.arcade.software/v7uhzmdV6Q5PDzoVPAE6?embed" />
+              <div className='mt-8 relative h-0 w-full pb-[480px]'>
+                <iframe
+                  loading='lazy'
+                  allowFullScreen={true}
+                  allow='fullscreen;'
+                  className='absolute w-full h-full top-0 left-0'
+                  src='https://demo.arcade.software/v7uhzmdV6Q5PDzoVPAE6?embed'
+                />
               </div>
-              <p className="mt-8 max-w-3xl mx-auto text-center text-xl text-gray-500">
+              <p className='mt-8 max-w-3xl mx-auto text-center text-xl text-gray-500'>
                 If you would like to target a specific thread on Discord, you
                 can add <strong>?thread_id=123</strong> to the URL you paste
                 into Sentry (replacing 123 with the thread ID).
